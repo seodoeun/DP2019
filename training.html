@@ -67,6 +67,80 @@
                                   <dt>ordered list 순차적 목록</dt>
                                   <dd>순서에 중요한 의미가 있는 목록을 이야기 한다.</dd>
                               </di>
+<!--strong,em <> b, i-->
+<strong>강한강조</strong>
+<em>강조</em>
+<b>볼드체</b>
+<i><이텔릭체</i>
+<!--ins 첨부글, del 삭제글 <> u, strike-->
+<ins>첨부하는 내용</ins>
+<del>쓸데없는 내용. 변경되어 삭제될 내용</del>
 
-                </body>
-                    </head>
+<u>밑줄</u>
+<strike>중간줄</strike>
+<!--sup 윗첨자 , sub 아랫첨자 -->
+<sub>2</sub>: 제곱수,2의 2승
+H<sub>2</sub>0:물의 화학식
+
+<img src="images/2cb5d888077563f34ff7d718cb365f40.jpg" width="100px"/>
+<img src="./images/2cb5d888077563f34ff7d718cb365f40.jpg"width="100px"/>
+
+<style>
+        table, tr, td {
+            border: solid 1px black
+        }
+        </style>
+        <!--table 도표--> 
+        <!--table, tr 한줄 , td 한칸-->
+        <!--summary요약, caption 표제 --> 
+        <table summery="표의요악,학생명단">
+            <caption> [표1] 표의제목 </caption>
+            <!--theed, tbody, tfoot--> 
+        </thead>
+            <tr>
+                <th scope="col">제목1</th>
+                <th scope="col">제목2</th>
+                <th scope="col">제목3</th>
+                <th scope="col">제목4</th>
+                <th scope="col">제목5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--colsoan 열 늘리기 가로로 늘림, rowspan 행 늘리기 - 세로로 늘림--> colsoan 열 늘리기 가로로 늘림, rowspan 행 늘리기 - 세로로 늘림—>
+                <td colspan="2">1</td> <!--가로로 두칸 차지함-->
+                <td rowspan="2">2</td> <!--세로로 두칸 차지함-->
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+        </table>
+        <style>
+                table{
+                    border: 1px solid black;
+                }
+                td{
+                    border: 1px solid black;
+                }
+            </style>
+            <table>
+                <tr>
+            <td colspan="5">up</td> <!--가로로 두칸 차지함-->
+            <td colspan="3" td rowspan="2",>right</td>
+                </tr>
+                <tr>
+                        <td colspan="2" td rowspan="3",>left</td>
+                        <td colspan="3">center</td>
+                </tr>
+                <tr>
+                        <td colspan="6",>down</td>
+                </tr>
+            </table>
+    </body>  
+</htm1>
