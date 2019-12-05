@@ -6,14 +6,15 @@
         <style>
             body{
                 margin: 0px;
+                font-family: 나눔스퀘어 extrabold;
             }
             header {
-                background-color: #02918c;
+                background-color: black;
                 color: white;
                 padding: 10px 50px;
             }
             #logo_back{
-                color: #cfc912;
+                color: white;
             }
             header>nav>ul>li{
                 float: left;
@@ -117,11 +118,40 @@
             margin-right: auto;
 
         }
+        footer li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            footer ul{
+                padding: 0px;
+            }
+            .float_left>ul>li{
+                border-right: solid 2px black;
+            }
+            footer{
+                background-color: black;
+                color: white;
+                padding: 30px;
+            }
 
         </style>
-
-    </head>
-    <body>
+</head>
+<body>
+    <header id="index_header">
+        <h1 class="float_left">
+            <span>ADOY</span><span id="logo_back">Office</span>
+        </h1>
+        <nav id="index_nav" class="float_right">
+            <ul id="index_ul">
+                    <li><a href="layout1.html">layout1</a></li>
+                    <li><a href="layout2.html">layout2</a></li>
+                    <li><a href="layout3.html">layout3</a></li>
+                    <li><a href="free_layout.html">free_layout</a></li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </header>
         <div id="wrap">
         <header>
             <h1 class="float_left">
@@ -216,5 +246,34 @@
         </section>
 
     </div>
+</div>
+<footer>
+    <div class="float_left">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Work</li>
+            <li>Blog</li>
+            <li>Contact</li>
+            <div class="clear"></div>
+        </ul>
+        <div>21961056_Seodoeun. All Right Reserved.</div>
+        <div>
+            the loges in the design are the property 
+            of their respective owners/copyright holders.
+        </div>
+    </div>
+    <ul class="float_right">
+        <li><img src="layout1_footer_icon1.png"/></li>
+        <li><img src="layout1_footer_icon2.png"/></li>
+        <li><img src="layout1_footer_icon3.png"/></li>
+        <li><img src="layout1_footer_icon4.png"/></li>
+        <li><img src="layout1_footer_icon5.png"/></li>
+        <li><img src="layout1_footer_icon6.png"/></li>
+        <div class="clear"></div>
+    </ul>
+    <div class="clear"></div>
+</footer> 
     </body>
 </html>

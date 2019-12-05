@@ -1,11 +1,80 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <title>아도이</title>
-        <meta charset="utf-8"/>
-        <style>
+<head>
+    <title>아도이 오피스</title>
+    <meta charset="utf-8" />
+    <style>
+            .background{
+                        background-color: white;
+                        background-size:cover;
+                        background-repeat: no-repeat;
+                        }
             body{
-                background-image: url("images/Layout3_back.jpg");
+				background-color: white;
+                font-family: 나눔스퀘어 extrabold;
+                margin: 0px;
+            }
+            header{
+                background-color: black;
+                color: white; /* 아도이 스튜디오 로고 색 */
+                padding: 10px 10px;
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+        
+            }
+            header>nav>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+                color: black;
+            }
+            header ul{
+                margin: left;
+            }
+            header a{
+                color: white;/* 네비게이션 바 메뉴색상 변경 */
+                text-decoration: none;
+                padding-left: 40px;
+            }
+            nav li{
+                float: left;
+                list-style: none;
+                padding: 0px;                
+            }
+
+            footer{
+                background-color: black;
+                float: left;
+                color: black;
+                padding-top: 2px;
+                padding-left: 3px;
+                padding-right: 930px;
+                padding-bottom: 3px;
+            }
+            #main_visual{
+                background-image: url("스크린샷 2019-12-06 오전 3.19.52.png");
+                background-size: 100% auto;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 50%; 
+
+                color: white; 
+                text-align: center;
+                padding-top: 120px; 
+            }
+            #main_visual h2{
+                font-size: 35px;
+                margin: 8px 0px; 
+            }
+            #main_visual img{
+                margin-top: 300px;
+                margin-bottom: 300px;
+            }
+
             }
             header li{
                 float: left;
@@ -41,7 +110,7 @@
                 font-weight: bold;
             }
             .card .category{
-                background-color: black;
+                background-color: white;
                 color: white;
                 display: block; /* 표시(display)방식 : 블록(화면 끝까지 늘어남) */
                 display: inline-block; /* 표시 방식 : 인라인과 블록 절충, 글자 넓이 만큼만 색상 채워짐 */
@@ -70,13 +139,25 @@
             #content li{
                 float: left;
                 list-style: none;
-                margin: 15px;
+                margin: 40px;
             }
             footer img{
                 margin: 10px 0px; 
             }
+            section>#about_list>li{
+            font-family: 'Kirang Haerang', cursive;font-family: 'Kirang Haerang', cursive;
+            font-size: 40px;
+            float: left;
+            width: 100px; /* 고정값 , 두개 이상 말한것은 나중에 말하는 것으로 적용됨 이 명령은 무시당할것이다*/
+            width: 33.3%; /*가변값 변하는게 가능한 값 4개의 오브젝트 100 나누기 4 = 25% */
+            width: calc(33.3% - (1px / 3 * 2) - 50px - 50px); /*1px을 4개로 쪼개서 3번만 빼준다? 패딩값도 빼줘야함 양 옆 40px이니까 둰 빼줌*/
+            list-style: none; /*동그라미 없어지는 것*/
+            /*border-right: solid 1px #ccc;*/
+            padding: 50px;
+        }
         </style>
-         <header>
+</head>
+        <header>
             <h1 class="float_left">
                 <span>ADOY</span> <span id="logo_back">Office</span>
                 <!-- div span  의미 없이 구획 나누기 좋음 -->
@@ -91,277 +172,222 @@
                 </ul>
             </nav>
             <div class="clear"></div>
-                </div>
+            <div id="main_visual">
+                    <img src="스크린샷 2019-12-05 오후 5.28"/>
+                </div> 
         </header>
+
+
+
+        <h1>Album</h1>   
         </div>
-            <div id="content">
-                <ul>
-                    <li class="card">
-                        <div class="visual">
-                            <img src="스크린샷 2019-12-05 오후 7.43.26 copy.jpg"/>
-                            <div class="category">
-                                photoshop design
+        <body>
+            <div id="wrap">
+                <div id="content">
+                    <ul>
+                        <li class="card">
+                            <div class="visual">
+                                    <img src="Dps4l9eVAAA-4g9.jpg-large.jpeg" width="250px" />
+                                <div class="category">
+                                </div>
+                            <div class="info">
+                                <dl>
+                                    <dt>CATNIP/2017.05.17</dt>
+                                    <dd>
+                                        <div class="date">12th October 2011</div>
+                                        <div class="long_line"></div>
+                                        <audio controls >
+                                                        <source src="Grace.mp3 " type="audio/mpeg"/>
+                                                </audio>
+                                        <div class="long_line"></div>
+                                        </p>
+                                    </dd>
+                                </dl>
                             </div>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>Dulux Colour Awards</dt>
-                                <dd>
-                                    <div class="date">12th October 2011</div>
-                                    <div class="long_line"></div>
-                                    <p>
-                                    A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
-                                    A collection of posters showing the famous colours of history, 
-                                    advertises you add your own colours to history.
-                                    <div class="long_line"></div>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="visual">
-                            <img src="layout3_img2.jpg"/>
-                            <div class="category">
-                                photoshop design
+                        </li>
+                        <li class="card">
+                            <div class="visual">
+                                    <img src="DclcR6gVwAEFLDz.jpg" width="250px" />
+                                <div class="category">
+                                </div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>Dulux Colour Awards</dt>
-                                <dd>
-                                    <div class="date">12th October 2011</div>
-                                    <div class="long_line"></div>
-                                    <p>
-                                    A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
-                                    A collection of posters showing the famous colours of history, 
-                                    advertises you add your own colours to history.
-                                    <div class="long_line"></div>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="visual">
-                            <img src="layout3_img3.jpg"/>
-                            <div class="category">
-                                photoshop design
+                            <div class="info">
+                                <dl>
+                                    <dt>Young/2018.05.08</dt>
+                                    <dd>
+                                        <div class="date">12th October 2011</div>
+                                        <div class="long_line"></div>
+                                        <audio controls >
+                                                <source src="ADOY.mp3" type="audio/mpeg"/>
+                                        </audio>
+                                        <div class="long_line"></div>
+                                        </p>
+                                    </dd>
+                                </dl>
                             </div>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>Dulux Colour Awards</dt>
-                                <dd>
-                                    <div class="date">12th October 2011</div>
-                                    <div class="long_line"></div>
-                                    <p>
-                                    A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
-                                    A collection of posters showing the famous colours of history, 
-                                    advertises you add your own colours to history.
-                                    <div class="long_line"></div>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="visual">
-                            <img src="layout3_img4.jpg"/>
-                            <div class="category">
-                                photoshop design
+                        </li>
+                        <li class="card">
+                            <div class="visual">
+                                    <img src="Dqb9XUIU8AAWgkq.jpg-large.jpeg" width="250px" />
+                                <div class="category">
+                                </div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>Dulux Colour Awards</dt>
-                                <dd>
-                                    <div class="date">12th October 2011</div>
-                                    <div class="long_line"></div>
-                                    <p>
-                                    A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
-                                    A collection of posters showing the famous colours of history, 
-                                    advertises you add your own colours to history.
-                                    <div class="long_line"></div>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="visual">
-                            <img src="layout3_img5.jpg"/>
-                            <div class="category">
-                                photoshop design
+                            <div class="info">
+                                <dl>
+                                    <dt>Love/2018.06.14</dt>
+                                    <dd>
+                                        <div class="date">12th October 2011</div>
+                                        <div class="long_line"></div>
+                                        <audio controls >
+                                                <source src="Wonder.mp3 " type="audio/mpeg"/>
+                                        </audio>
+                                        <div class="long_line"></div>
+                                        </p>
+                                    </dd>
+                                </dl>
                             </div>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>Dulux Colour Awards</dt>
-                                <dd>
-                                    <div class="date">12th October 2011</div>
-                                    <div class="long_line"></div>
-                                    <p>
-                                    A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
-                                    A collection of posters showing the famous colours of history, 
-                                    advertises you add your own colours to history.
-                                    <div class="long_line"></div>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="visual">
-                            <img src="layout3_img6.jpg"/>
-                            <div class="category">
-                                photoshop design
+                        </li>
+                        <li class="card">
+                            <div class="visual">
+                                    <img src="EGhmc5iUUAAGSA7.jpg" width="250px" />
+                                <div class="category">
+                                </div>
                             </div>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>Dulux Colour Awards</dt>
-                                <dd>
-                                    <div class="date">12th October 2011</div>
-                                    <div class="long_line"></div>
-                                    <p>
-                                    A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
-                                    A collection of posters showing the famous colours of history, 
-                                    advertises you add your own colours to history.
-                                    <div class="long_line"></div>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <div class="visual">
-                            <img src="layout3_img7.jpg"/>
-                            <div class="category">
-                                photoshop design
+                            <div class="info">
+                                <dl>
+                                    <dt>pool/2019.10.16</dt>
+                                    <dd>
+                                        <div class="date">12th October 2011</div>
+                                        <div class="long_line"></div>
+                                        <audio controls >
+                                        <source src="Pool.mp3 " type="audio/mpeg"/>
+                                        </audio>
+                                        <div class="long_line"></div>
+                                        </p>
+                                    </dd>
+                                </dl>
                             </div>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>Dulux Colour Awards</dt>
-                                <dd>
-                                    <div class="date">12th October 2011</div>
-                                    <div class="long_line"></div>
-                                    <p>
-                                    A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
-                                    A collection of posters showing the famous colours of history, 
-                                    advertises you add your own colours to history.
-                                    <div class="long_line"></div>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div>
-                    </li>   
-                    <li class="card">
-                        <div class="visual">
-                            <img src="layout3_img8.jpg"/>
-                            <div class="category">
-                                photoshop design
-                            </div>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>Dulux Colour Awards</dt>
-                                <dd>
-                                    <div class="date">12th October 2011</div>
-                                    <div class="long_line"></div>
-                                    <p>
-                                    A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
-                                    A collection of posters showing the famous colours of history, 
-                                    advertises you add your own colours to history.
-                                    <div class="long_line"></div>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div>
-                    </li>   
-                    <li class="card">
-                        <div class="visual">
-                            <img src="layout3_img9.jpg"/>
-                            <div class="category">
-                                photoshop design
-                            </div>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>Dulux Colour Awards</dt>
-                                <dd>
-                                    <div class="date">12th October 2011</div>
-                                    <div class="long_line"></div>
-                                    <p>
-                                    A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
-                                    A collection of posters showing the famous colours of history, 
-                                    advertises you add your own colours to history.
-                                    <div class="long_line"></div>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div>
-                    </li>  
-                    <li class="card">
-                        <div class="visual">
-                            <img src="layout3_img10.jpg"/>
-                            <div class="category">
-                                photoshop design
-                            </div>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>Dulux Colour Awards</dt>
-                                <dd>
-                                    <div class="date">12th October 2011</div>
-                                    <div class="long_line"></div>
-                                    <p>
-                                    A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
-                                    A collection of posters showing the famous colours of history, 
-                                    advertises you add your own colours to history.
-                                    <div class="long_line"></div>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div>
-                    </li>    
-                    <li class="card">
-                        <div class="visual">
-                            <img src="layout3_img11.jpg"/>
-                            <div class="category">
-                                photoshop design
-                            </div>
-                        </div>
-                        <div class="info">
-                            <dl>
-                                <dt>Dulux Colour Awards</dt>
-                                <dd>
-                                    <div class="date">12th October 2011</div>
-                                    <div class="long_line"></div>
-                                    <p>
-                                    A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
-                                    A collection of posters showing the famous colours of history, 
-                                    advertises you add your own colours to history.
-                                    <div class="long_line"></div>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </div>
-                    </li>
-                    <div class="clear"></div>    
-            </ul>
+                        </li>
+
+
+
+
+
+                        <div id="wrap"></div>
+                        <div id="content">
+                            <ul>
+                                <li class="card">
+                                    <div class="visual">
+                                            <img src="e2ba3ef328cf0c397fa412471579ddf5-1.jpg" width="250px" />
+                                        <div class="category">
+                                        </div>
+                                    <div class="info">
+                                        <dl>
+                                            <dt>CATNIP/2017.05.17</dt>
+                                            <dd>
+                                                <div class="date">12th October 2011</div>
+                                                <div class="long_line"></div>
+                                                <audio controls >
+                                                                <source src="Grace.mp3 " type="audio/mpeg"/>
+                                                        </audio>
+                                                <div class="long_line"></div>
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li class="card">
+                                    <div class="visual">
+                                            <img src="4d6d207cfe63e475c2735fea34ed5fbb.jpg" width="250px" />
+                                        <div class="category">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <dl>
+                                            <dt>Young/2018.05.08</dt>
+                                            <dd>
+                                                <div class="date">12th October 2011</div>
+                                                <div class="long_line"></div>
+                                                <audio controls >
+                                                        <source src="Balloon.mp3" type="audio/mpeg"/>
+                                                </audio>
+                                                <div class="long_line"></div>
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li class="card">
+                                    <div class="visual">
+                                            <img src="9af8747f03093fa9d00dfd6fa2943f20.jpg" width="250px" />
+                                        <div class="category">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <dl>
+                                            <dt>Love/2018.06.14</dt>
+                                            <dd>
+                                                <div class="date">12th October 2011</div>
+                                                <div class="long_line"></div>
+                                                <audio controls >
+                                                        <source src="Don't Stop.mp3 " type="audio/mpeg"/>
+                                                </audio>
+                                                <div class="long_line"></div>
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li class="card">
+                                    <div class="visual">
+                                            <img src="8ccc98e92d99ae312765002af7931743.jpg" width="250px" />
+                                        <div class="category">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <dl>
+                                            <dt>pool/2019.10.16</dt>
+                                            <dd>
+                                                <div class="date">12th October 2011</div>
+                                                <div class="long_line"></div>
+                                                <audio controls >
+                                                        <source src="Bike.mp3 " type="audio/mpeg"/>
+                                                </audio>
+                                                <div class="long_line"></div>
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </li>
+
+
+
+
+                        <br/>
+                        <h1>Adoy Cafe</h1>  
+                    <img src="스크린샷 2019-12-06 오전 2.40.34.png" width="1600px" />
+                    <br/>
+
+                
+
+                                <center>
+                                    <video controls  muted>
+                                    <source src="KakaoTalk_Video_2019-12-06-01-53-18.mp4" type="video/mp4"/>
+                                </video>
+                                <video controls  muted>
+                                    <source src="KakaoTalk_Video_2019-12-06-02-01-33.mp4" type="video/mp4"/>
+                                </video>
+                            </center>
+                            <br/>
+                            <center>
+                                    <img src=" 스크린샷 2019-12-06 오전 3.05.25.png" width="250px" />
+                                    <img src=" 스크린샷 2019-12-06 오전 3.05.18.png" width="250px" />
+                                    <img src=" 스크린샷 2019-12-06 오전 3.06.10.png" width="250px" />
+                                    <img src=" 스크린샷 2019-12-06 오전 3.06.15.png" width="250px" />
+                                    <img src=" 스크린샷 2019-12-06 오전 3.06.10.png" width="250px" />
+                        </center>
+                                
             </div>
-            <footer>
-                <div class="short_line"></div>
-                <img src="layout3_icon1.png"/>
-                <img src="layout3_icon2.png"/>
-                <img src="layout3_icon3.png"/>
-                <img src="layout3_icon4.png"/>
-                <div class="short_line"></div>
-                <div>This website & the Internet Ends hereg</div>
-                <div>Copyright 2011 Showcase Design www.BlazRobar.com</div>
-            </footer>
-        </div>
-    </body>
+</body>
 </html>
+
